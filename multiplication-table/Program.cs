@@ -17,17 +17,17 @@ namespace multiplication_table
             int startingNumber = 0;
             int endingNumber = 0;
 
-            Console.WriteLine("Podaj liczbę, od której chcesz rozpocząć rysowanie tabliczki mnożenia: ");
+            Console.WriteLine("Input the number from which the table should start: ");
             startingNumber = uInput.GetNumber(startingNumber);
 
-            Console.WriteLine("Podaj liczbę, na której chcesz zakończyć rysowanie tabliczki mnożenia: ");
+            Console.WriteLine("Input the number at which the table should end: ");
             endingNumber = uInput.GetNumber(endingNumber);
 
             Console.WriteLine();
 
             if (!uInput.IsValid(startingNumber, endingNumber))
             {
-                Console.WriteLine("Podano niewłaściwy zakres. Spróbuj ponownie uruchomić program.");
+                Console.WriteLine("Invalid input. Please try again!");
                 e.Escape();
             }
 
